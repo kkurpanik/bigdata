@@ -1,5 +1,5 @@
-from sensor_factory import SensorFactory
-from task_factory import TaskFactory
+from .sensor_factory import SensorFactory
+from .task_factory import TaskFactory
 
 class FlowFactory:
 
