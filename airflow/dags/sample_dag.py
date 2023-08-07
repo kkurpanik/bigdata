@@ -15,9 +15,7 @@ with DAG(
     "sample_dag",
     default_args = default_args,
     description = "A sample DAG",
-    schedule=timedelta(days=1),
-    start_date=datetime(2023,8,8),
-    catchup=False,
+    schedule=None,
     tags=["example"]
 ) as dag:
     t1 = BashOperator(
@@ -32,4 +30,4 @@ with DAG(
         retries = 3
     )
 
-t1 >> t2
+    t1 >> t2
