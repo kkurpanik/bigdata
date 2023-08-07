@@ -16,6 +16,7 @@ with DAG(
     default_args = default_args,
     description = "A sample DAG",
     schedule=None,
+    start_date=datetime(2021, 1, 1)
     tags=["example"]
 ) as dag:
     t1 = BashOperator(
