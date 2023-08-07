@@ -1,7 +1,7 @@
 from airflow import DAG
 from common.constants import default_args
 from common.flow_factory import FlowFactory
-from datetime import datetime, timedelta
+from datetime import datetime
 
 
 flow_factory = FlowFactory()

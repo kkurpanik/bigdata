@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 default_args = {
     "depends_on_past": False,
     "email": ["airflow@example.com"],
